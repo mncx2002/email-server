@@ -1,0 +1,20 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 123.60.73.29:8848
+        file-extension: yaml
+        namespace: b4769231-81e4-4800-b121-9fc21f07eadb
+        group: vehicle-manager
+        username: nacos
+        password: nacos
+      discovery:
+        server-addr: 123.60.73.29:8848
+        namespace: b4769231-81e4-4800-b121-9fc21f07eadb
+        group: vehicle-manager
+        username: nacos
+        password: nacos
+  profiles:
+    active: dev
+  application:
+    name: email-server
