@@ -23,7 +23,7 @@ public class SendEmailUtil {
     @Resource
     private JavaMailSender javaMailSender;
     private final String  TEXT="sdfadfgdfasddggga";
-    public void sendSimpleEmail(String to, String subject, String content) throws MessagingException {
+    public void sendSimpleEmail(String to, String subject, String content) {
         SimpleMailMessage mailMessage = new SimpleMailMessage();
         // 设置发件人
         mailMessage.setFrom("2113168433@qq.com");
